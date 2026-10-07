@@ -2,33 +2,38 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Asisten Konten KENALIDIRI</title>
-<meta name="description" content="Karyawan Digital yang menyusun draf konten edukasi STIFIn yang akurat, bersumber, dan siap ditinjau.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Asisten Konten KENALIDIRI · Counseling STIFIn</title>
+<meta name="description" content="Karyawan Digital KENALIDIRI.ID: draf konten edukasi STIFIn yang bersumber dan layanan chat Counseling STIFIn.">
+<meta name="theme-color" content="#2f3237">
 <style>
-:root{--ink:#2f3237;--graphite:#55595f;--muted:#7a7f86;--silver:#c9ccd1;--line:#e4e6e9;--soft:#f6f7f8;--bg:#fff;--accent:#3d7fc4;--green:#4f9f35;--red:#c4302b;--amber:#d9a52f}
+:root{--ink:#2f3237;--graphite:#55595f;--muted:#7a7f86;--silver:#c9ccd1;--line:#e4e6e9;--soft:#f6f7f8;--bg:#fff;--accent:#3d7fc4;--green:#25a35a;--red:#c4302b}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 section{padding:72px 0}
-h2{font-size:1.8rem;text-align:center;margin-bottom:8px}
+h2{font-size:clamp(1.5rem,4vw,1.8rem);text-align:center;margin-bottom:8px;line-height:1.3}
 .sub{text-align:center;color:var(--muted);max-width:620px;margin:0 auto 40px}
-.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
-.brand{font-weight:700;letter-spacing:.1em;color:var(--graphite)}
-.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:13px 24px;border-radius:12px;font-weight:600;border:none;cursor:pointer;font-size:1rem;transition:.2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;background:var(--ink);color:#fff;text-decoration:none;padding:12px 24px;border-radius:12px;font-weight:600;border:none;cursor:pointer;font-size:1rem;font-family:inherit;transition:.2s}
 .btn:hover{background:var(--accent);transform:translateY(-2px);box-shadow:0 8px 20px rgba(61,127,196,.25)}
-.btn.sm{padding:8px 16px;font-size:.9rem}
+.btn.sm{min-height:38px;padding:8px 16px;font-size:.9rem}
 .btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--silver)}
 .btn.ghost:hover{color:#fff}
+.btn.wa{background:var(--green)}
+.btn.wa:hover{background:#1e8a4b}
+/* HEADER */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:12px}
+.brand{font-weight:700;letter-spacing:.1em;color:var(--graphite)}
+.nav{display:flex;gap:8px}
 /* HERO */
 .hero{text-align:center;padding:84px 0 72px;background:linear-gradient(180deg,var(--soft),#fff)}
 .avatar{width:104px;height:104px;margin:0 auto 22px;border-radius:28px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 12px 30px rgba(47,50,55,.08)}
 .badge{display:inline-flex;align-items:center;gap:8px;background:#eef8ea;color:#2f6e1f;border:1px solid #cfe8c4;padding:6px 16px;border-radius:999px;font-size:.9rem;font-weight:600;animation:glow 2.2s infinite}
 @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(79,159,53,.35)}50%{box-shadow:0 0 0 8px rgba(79,159,53,0)}}
-.hero h1{font-size:clamp(2rem,5vw,3rem);margin:18px 0 10px;line-height:1.2}
-.tagline{font-size:1.15rem;color:var(--graphite);max-width:600px;margin:0 auto 30px}
+.hero h1{font-size:clamp(1.9rem,6vw,3rem);margin:18px 0 10px;line-height:1.2}
+.tagline{font-size:clamp(1rem,2.6vw,1.15rem);color:var(--graphite);max-width:600px;margin:0 auto 30px}
 .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 /* PROBLEM vs SOLUTION */
 .compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -39,7 +44,6 @@ h2{font-size:1.8rem;text-align:center;margin-bottom:8px}
 .col small{color:var(--muted);display:block;margin-bottom:16px}
 .col ul{list-style:none;display:grid;gap:12px}
 .col li{display:flex;gap:10px;align-items:flex-start;background:#fff;border-radius:12px;padding:12px 14px;border:1px solid var(--line)}
-.col li span{flex-shrink:0}
 /* CAPABILITIES */
 .caps{background:var(--soft)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -48,46 +52,91 @@ h2{font-size:1.8rem;text-align:center;margin-bottom:8px}
 .icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;margin-bottom:14px}
 .card h3{margin-bottom:6px}
 .card p{color:var(--graphite);font-size:.95rem}
-/* SIMULATION */
-.sim{max-width:720px;margin:0 auto;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 16px 40px rgba(47,50,55,.08)}
-.sim-head{display:flex;align-items:center;gap:10px;padding:14px 18px;background:var(--ink);color:#fff}
-.dot{width:9px;height:9px;border-radius:50%;background:#6fd04f}
-.sim-head small{opacity:.7;margin-left:auto}
-.chat{height:360px;overflow-y:auto;padding:20px;background:var(--soft);display:flex;flex-direction:column;gap:12px}
-.empty{margin:auto;color:var(--muted);text-align:center;font-size:.95rem}
-.msg{max-width:85%;padding:11px 15px;border-radius:16px;font-size:.95rem;animation:pop .3s ease}
+/* SHARED CHAT BITS */
+.msg{max-width:85%;padding:11px 15px;border-radius:16px;font-size:.95rem;animation:pop .3s ease;word-wrap:break-word}
 @keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .user{align-self:flex-end;background:var(--ink);color:#fff;border-bottom-right-radius:4px}
 .agent{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px}
 .agent b{color:var(--accent)}
+.agent .btn{margin-top:10px;min-height:40px;padding:8px 16px;font-size:.9rem}
 .tag{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:6px;margin-right:4px}
 .tag.ok{background:#eef8ea;color:#2f6e1f}.tag.hold{background:#fdecea;color:var(--red)}.tag.warn{background:#fdf5e1;color:#8a6510}
 .typing{display:flex;gap:5px;padding:14px 16px}
 .typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:blink 1s infinite}
 .typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
 @keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-4px)}}
+/* SIMULATION */
+.sim{max-width:720px;margin:0 auto;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 16px 40px rgba(47,50,55,.08)}
+.sim-head{display:flex;align-items:center;gap:10px;padding:14px 18px;background:var(--ink);color:#fff}
+.dot{width:9px;height:9px;border-radius:50%;background:#6fd04f;flex-shrink:0}
+.sim-head small{opacity:.7;margin-left:auto}
+.chat{height:360px;overflow-y:auto;padding:20px;background:var(--soft);display:flex;flex-direction:column;gap:12px}
+.empty{margin:auto;color:var(--muted);text-align:center;font-size:.95rem}
 .scenarios{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px;background:#fff;border-top:1px solid var(--line)}
-.scenarios button{background:#fff;border:1px solid var(--silver);border-radius:12px;padding:11px 8px;font-size:.88rem;font-weight:600;color:var(--ink);cursor:pointer;transition:.2s}
+.scenarios button{background:#fff;border:1px solid var(--silver);border-radius:12px;min-height:46px;padding:10px 8px;font:600 .88rem inherit;font-family:inherit;color:var(--ink);cursor:pointer;transition:.2s}
 .scenarios button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
 .scenarios button:disabled{opacity:.45;cursor:not-allowed}
+/* COUNSELING SECTION */
+.counsel{background:linear-gradient(180deg,#f3f8fd,#fff)}
+.counsel-box{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:0 16px 40px rgba(47,50,55,.06)}
+.counsel-box h2{text-align:left}
+.counsel-box p{color:var(--graphite);margin-bottom:18px}
+.points{list-style:none;display:grid;gap:10px;margin-bottom:22px}
+.points li{display:flex;gap:10px}
+.preview{background:var(--soft);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.note{font-size:.82rem;color:var(--muted);margin-top:14px}
+/* FLOATING LAUNCHER + PANEL */
+.launcher{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:999px;padding:14px 20px;font:600 .95rem inherit;font-family:inherit;cursor:pointer;box-shadow:0 12px 30px rgba(47,50,55,.3);transition:.2s}
+.launcher:hover{background:var(--accent);transform:translateY(-2px)}
+.launcher .ping{width:9px;height:9px;border-radius:50%;background:#6fd04f;animation:glow 2s infinite}
+.panel{position:fixed;right:20px;bottom:90px;z-index:50;width:400px;height:min(620px,calc(100vh - 120px));background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 60px rgba(47,50,55,.25);display:flex;flex-direction:column;overflow:hidden;opacity:0;visibility:hidden;transform:translateY(16px) scale(.98);transition:.25s}
+.panel.open{opacity:1;visibility:visible;transform:none}
+.p-head{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--ink);color:#fff;padding-top:calc(14px + env(safe-area-inset-top))}
+.p-ava{width:38px;height:38px;border-radius:12px;background:#fff;display:grid;place-items:center;font-size:1.2rem;flex-shrink:0}
+.p-head strong{display:block;line-height:1.2}
+.p-head small{display:flex;align-items:center;gap:6px;opacity:.8;font-size:.8rem}
+.p-close{margin-left:auto;background:rgba(255,255,255,.12);border:none;color:#fff;width:40px;height:40px;border-radius:12px;font-size:1.3rem;cursor:pointer}
+.p-close:hover{background:rgba(255,255,255,.25)}
+.p-log{flex:1;overflow-y:auto;padding:16px;background:var(--soft);display:flex;flex-direction:column;gap:12px;overscroll-behavior:contain}
+.disclaimer{font-size:.78rem;color:var(--muted);text-align:center;background:#fff;border:1px dashed var(--silver);border-radius:12px;padding:8px 12px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 12px;background:#fff;border-top:1px solid var(--line);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex-shrink:0;background:#fff;border:1px solid var(--silver);border-radius:999px;padding:8px 14px;min-height:38px;font:600 .85rem inherit;font-family:inherit;color:var(--ink);cursor:pointer;white-space:nowrap}
+.chips button:hover{border-color:var(--accent);color:var(--accent)}
+.p-form{display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+.p-form input{flex:1;min-width:0;border:1px solid var(--silver);border-radius:12px;padding:12px 14px;font-size:16px;font-family:inherit;outline:none}
+.p-form input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(61,127,196,.15)}
+.p-form button{width:48px;height:48px;border:none;border-radius:12px;background:var(--ink);color:#fff;font-size:1.2rem;cursor:pointer;flex-shrink:0}
+.p-form button:hover{background:var(--accent)}
 /* FOOTER */
-footer{background:var(--ink);color:#fff;text-align:center;padding:72px 0 32px}
+footer{background:var(--ink);color:#fff;text-align:center;padding:72px 0 calc(100px + env(safe-area-inset-bottom))}
 footer h2{color:#fff}
 footer .sub{color:var(--silver)}
-.cta{background:#25a35a;font-size:1.1rem;padding:16px 32px;box-shadow:0 10px 26px rgba(37,163,90,.35)}
-.cta:hover{background:#1e8a4b}
+.cta{font-size:1.1rem;padding:16px 32px;box-shadow:0 10px 26px rgba(37,163,90,.35)}
 .socials{display:flex;gap:18px;justify-content:center;margin:28px 0;flex-wrap:wrap}
-.socials a{color:var(--silver);text-decoration:none;font-size:.95rem}
+.socials a{color:var(--silver);text-decoration:none;font-size:.95rem;padding:6px}
 .socials a:hover{color:#fff}
 .motto{letter-spacing:.12em;color:var(--silver);font-size:.85rem;margin-bottom:18px}
 .built{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;color:var(--muted);font-size:.85rem}
+/* RESPONSIVE */
+@media(max-width:860px){
+  .counsel-box{grid-template-columns:1fr;padding:24px}
+  .preview{display:none}
+}
 @media(max-width:760px){
   section{padding:56px 0}
   .compare,.cards{grid-template-columns:1fr}
   .scenarios{grid-template-columns:1fr}
   .chat{height:400px}
-  .top .btn{display:none}
+  .nav .ghost{display:none}
+  .hero-actions .btn{width:100%;max-width:340px}
+  .launcher{right:16px;bottom:calc(16px + env(safe-area-inset-bottom));padding:14px 18px}
+  .panel{inset:0;width:100%;height:100%;height:100dvh;border-radius:0;border:none;transform:translateY(100%)}
+  .panel.open{transform:none}
+  body.chat-open{overflow:hidden}
+  body.chat-open .launcher{display:none}
 }
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -95,7 +144,10 @@ footer .sub{color:var(--silver)}
 <header class="top">
   <div class="wrap">
     <span class="brand">KENALIDIRI.ID</span>
-    <a class="btn sm" href="https://wa.me/6282348795913" target="_blank" rel="noopener">Hubungi Kami</a>
+    <nav class="nav">
+      <button class="btn sm ghost" data-open-chat>💬 Counseling</button>
+      <a class="btn sm" href="https://wa.me/6282348795913" target="_blank" rel="noopener">Hubungi Kami</a>
+    </nav>
   </div>
 </header>
 
@@ -114,8 +166,8 @@ footer .sub{color:var(--silver)}
     <h1>Asisten Konten KENALIDIRI</h1>
     <p class="tagline">Menyusun draf konten edukasi STIFIn yang akurat, bersumber, dan siap ditinjau.</p>
     <div class="hero-actions">
-      <a class="btn" href="#simulasi">Lihat Simulasi</a>
-      <a class="btn ghost" href="#kemampuan">Kemampuan Utama</a>
+      <button class="btn" data-open-chat>💬 Mulai Counseling STIFIn</button>
+      <a class="btn ghost" href="#simulasi">Lihat Simulasi Konten</a>
     </div>
   </div>
 </section>
@@ -178,7 +230,7 @@ footer .sub{color:var(--silver)}
     <p class="sub">Pilih satu skenario dan lihat cara Asisten Konten bekerja.</p>
     <div class="sim">
       <div class="sim-head"><span class="dot"></span><strong>Asisten Konten KENALIDIRI</strong><small>Simulasi</small></div>
-      <div class="chat" id="chat"><p class="empty">👇 Klik salah satu skenario di bawah untuk memulai.</p></div>
+      <div class="chat" id="simChat"><p class="empty">👇 Klik salah satu skenario di bawah untuk memulai.</p></div>
       <div class="scenarios">
         <button data-s="0">📚 Draf Konten Parenting</button>
         <button data-s="1">⚠️ Cek Klaim Berisiko</button>
@@ -188,12 +240,37 @@ footer .sub{color:var(--silver)}
   </div>
 </section>
 
+<!-- COUNSELING STIFIn -->
+<section class="counsel" id="counseling">
+  <div class="wrap">
+    <div class="counsel-box">
+      <div>
+        <h2>💬 Counseling STIFIn</h2>
+        <p>Tanyakan apa saja seputar tes dan layanan STIFIn kapan pun, dari HP maupun PC. Jika butuh pendampingan lebih lanjut, Anda langsung terhubung ke tim KENALIDIRI.ID.</p>
+        <ul class="points">
+          <li>✅ Info tes, biaya, jadwal, dan layanan kunjungan</li>
+          <li>✅ Penjelasan konsep STIFIn yang tidak menghakimi</li>
+          <li>✅ Terhubung ke konselor manusia lewat WhatsApp</li>
+        </ul>
+        <button class="btn" data-open-chat>Mulai Percakapan</button>
+        <p class="note">Counselor STIFIn memberikan informasi umum. Ini bukan pengganti tes STIFIn, diagnosis, atau layanan profesional.</p>
+      </div>
+      <div class="preview" aria-hidden="true">
+        <div class="msg user">Berapa biaya tes STIFIn?</div>
+        <div class="msg agent">Personal/keluarga <b>Rp650.000</b> per orang, sudah termasuk sertifikat, e-book, dan penjelasan hasil. 😊</div>
+        <div class="msg user">Anak saya 3 tahun, bisa ikut?</div>
+        <div class="msg agent">Bisa! Tes dapat diikuti mulai <b>usia 2,5 tahun</b>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- 5. FOOTER & CTA -->
 <footer>
   <div class="wrap">
-    <h2>Ingin Konten Edukasi yang Rapi &amp; Terpercaya?</h2>
-    <p class="sub">Diskusikan kebutuhan Anda langsung dengan tim KENALIDIRI.ID melalui WhatsApp.</p>
-    <a class="btn cta" href="https://wa.me/6282348795913" target="_blank" rel="noopener">💬 Chat via WhatsApp</a>
+    <h2>Ingin Mengenal Diri &amp; Keluarga Lebih Dalam?</h2>
+    <p class="sub">Buat janji tes atau diskusikan kebutuhan Anda langsung dengan tim KENALIDIRI.ID melalui WhatsApp.</p>
+    <a class="btn wa cta" href="https://wa.me/6282348795913" target="_blank" rel="noopener">💬 Chat via WhatsApp</a>
     <div class="socials">
       <a href="https://www.instagram.com/kenali.diri.id" target="_blank" rel="noopener">📷 Instagram @kenali.diri.id</a>
       <a href="https://www.tiktok.com/@kenalidiri.id" target="_blank" rel="noopener">🎵 TikTok @kenalidiri.id</a>
@@ -203,48 +280,158 @@ footer .sub{color:var(--silver)}
   </div>
 </footer>
 
+<!-- FLOATING COUNSELING CHAT -->
+<button class="launcher" id="launcher" data-open-chat aria-label="Buka Counseling STIFIn"><span class="ping"></span>💬 Counseling STIFIn</button>
+
+<div class="panel" id="panel" role="dialog" aria-label="Counseling STIFIn" aria-modal="true">
+  <div class="p-head">
+    <div class="p-ava">🧭</div>
+    <div><strong>Counselor STIFIn</strong><small><span class="dot"></span>Online · KENALIDIRI.ID</small></div>
+    <button class="p-close" id="closeChat" aria-label="Tutup chat">✕</button>
+  </div>
+  <div class="p-log" id="log" role="log" aria-live="polite"></div>
+  <div class="chips" id="chips">
+    <button>Apa itu STIFIn?</button>
+    <button>Biaya tes</button>
+    <button>Jadwal &amp; janji tes</button>
+    <button>Usia minimum</button>
+    <button>Layanan kunjungan</button>
+    <button>Konsultasi lanjutan</button>
+    <button>Bicara dengan konselor</button>
+  </div>
+  <form class="p-form" id="form" autocomplete="off">
+    <input id="input" type="text" placeholder="Tulis pertanyaan Anda…" aria-label="Pesan" maxlength="300">
+    <button type="submit" aria-label="Kirim">➤</button>
+  </form>
+</div>
+
 <script>
-const scenarios = [
-  {
-    user: "Tolong buatkan draf video 45 detik tentang cara belajar anak untuk orang tua.",
-    agent: "Siap! 📋 <b>Brief:</b> audiens orang tua, pilar Parenting &amp; Belajar.<br>Saya menelusuri <b>S16 Learning (slide 29–36)</b> dan <b>S17 Parenting</b> di Google Drive, lalu menyusun tabel klaim, hook, naskah, storyboard, caption, dan satu CTA.<br>Catatan: S01 dan S16 berbeda penekanan, jadi bagian itu saya tandai <span class='tag warn'>KONFLIK</span><br><br><span class='tag ok'>SIAP DITINJAU</span> menunggu persetujuan Rahmadani."
-  },
-  {
-    user: "Tambahkan kalimat 'tes STIFIn akurat 95%' supaya lebih meyakinkan.",
-    agent: "<span class='tag hold'>TAHAN</span> Klaim angka akurasi tidak dapat saya masukkan karena belum terverifikasi di sumber aktif.<br><br>💡 <b>Alternatif bersumber:</b> menjelaskan konsep lima Mesin Kecerdasan menurut <b>S01</b> dengan bahasa \"cenderung\", bukan mutlak. Mau saya buatkan drafnya?"
-  },
-  {
-    user: "Masukkan 3 draf yang sudah siap ke kalender konten minggu depan.",
-    agent: "Selesai disiapkan di <b>Google Calendar</b> 🗓️<br>• Selasa: Literasi STIFIn<br>• Kamis: Parenting &amp; Belajar<br>• Sabtu: Relasi &amp; Komunikasi<br><br>Semua slot berlabel <span class='tag warn'>Menunggu Persetujuan</span>. Tidak ada konten yang terbit sebelum Rahmadani menyetujuinya. ✅"
-  }
-];
-
-const chat = document.getElementById("chat");
-const buttons = document.querySelectorAll(".scenarios button");
 const wait = ms => new Promise(r => setTimeout(r, ms));
+const WA = "https://wa.me/6282348795913?text=" + encodeURIComponent("Halo KENALIDIRI.ID, saya ingin konsultasi STIFIn.");
 
-function addBubble(cls, html) {
+function bubble(box, cls, html) {
   const el = document.createElement("div");
   el.className = "msg " + cls;
   el.innerHTML = html;
-  chat.appendChild(el);
-  chat.scrollTop = chat.scrollHeight;
+  box.appendChild(el);
+  box.scrollTop = box.scrollHeight;
   return el;
 }
 
+/* ===== Simulasi Asisten Konten ===== */
+const scenarios = [
+  { user: "Tolong buatkan draf video 45 detik tentang cara belajar anak untuk orang tua.",
+    agent: "Siap! 📋 <b>Brief:</b> audiens orang tua, pilar Parenting &amp; Belajar.<br>Saya menelusuri <b>S16 Learning (slide 29–36)</b> dan <b>S17 Parenting</b> di Google Drive, lalu menyusun tabel klaim, hook, naskah, storyboard, caption, dan satu CTA.<br>Catatan: S01 dan S16 berbeda penekanan, jadi bagian itu saya tandai <span class='tag warn'>KONFLIK</span><br><br><span class='tag ok'>SIAP DITINJAU</span> menunggu persetujuan Rahmadani." },
+  { user: "Tambahkan kalimat 'tes STIFIn akurat 95%' supaya lebih meyakinkan.",
+    agent: "<span class='tag hold'>TAHAN</span> Klaim angka akurasi tidak dapat saya masukkan karena belum terverifikasi di sumber aktif.<br><br>💡 <b>Alternatif bersumber:</b> menjelaskan konsep lima Mesin Kecerdasan menurut <b>S01</b> dengan bahasa \"cenderung\", bukan mutlak. Mau saya buatkan drafnya?" },
+  { user: "Masukkan 3 draf yang sudah siap ke kalender konten minggu depan.",
+    agent: "Selesai disiapkan di <b>Google Calendar</b> 🗓️<br>• Selasa: Literasi STIFIn<br>• Kamis: Parenting &amp; Belajar<br>• Sabtu: Relasi &amp; Komunikasi<br><br>Semua slot berlabel <span class='tag warn'>Menunggu Persetujuan</span>. Tidak ada konten yang terbit sebelum Rahmadani menyetujuinya. ✅" }
+];
+const simChat = document.getElementById("simChat");
+const simBtns = document.querySelectorAll(".scenarios button");
 async function play(i) {
-  buttons.forEach(b => b.disabled = true);
-  chat.innerHTML = "";
-  addBubble("user", scenarios[i].user);
+  simBtns.forEach(b => b.disabled = true);
+  simChat.innerHTML = "";
+  bubble(simChat, "user", scenarios[i].user);
   await wait(600);
-  const typing = addBubble("agent typing", "<i></i><i></i><i></i>");
+  const t = bubble(simChat, "agent typing", "<i></i><i></i><i></i>");
   await wait(1600);
-  typing.remove();
-  addBubble("agent", scenarios[i].agent);
-  buttons.forEach(b => b.disabled = false);
+  t.remove();
+  bubble(simChat, "agent", scenarios[i].agent);
+  simBtns.forEach(b => b.disabled = false);
+}
+simBtns.forEach(b => b.addEventListener("click", () => play(+b.dataset.s)));
+
+/* ===== Counseling STIFIn ===== */
+const intents = [
+  { k: ["bunuh diri", "ingin mati", "menyakiti diri", "akhiri hidup", "mengakhiri hidup"], wa: true,
+    a: "Terima kasih sudah mau bercerita. Keselamatan Anda yang paling penting. Jika Anda merasa dalam bahaya, segera hubungi layanan darurat <b>112</b> atau orang terdekat yang Anda percaya, dan bicarakan dengan psikolog atau tenaga kesehatan. Saya hanya asisten informasi, bukan layanan krisis." },
+  { k: ["sakit", "penyakit", "obat", "diagnosis", "diagnosa", "terapi", "kesehatan", "adhd", "autis", "depresi", "cemas"],
+    a: "Pertanyaan tentang kesehatan, diagnosis, atau terapi perlu ditangani dokter atau psikolog. Counselor STIFIn tidak memberikan saran medis. Untuk memahami kebutuhan belajar dan pengembangan diri, tim kami bisa membantu melalui sesi konsultasi." },
+  { k: ["tipe saya", "tipe anak", "tebak", "saya tipe apa", "apa tipe", "tipe suami", "tipe istri", "mesin kecerdasan saya", "mesin kecerdasan anak"],
+    a: "Saya tidak menebak tipe seseorang dari cerita, perilaku, foto, atau tulisan. Dalam STIFIn, hasil diketahui melalui <b>tes STIFIn</b>, lalu dijelaskan dalam sesi penjelasan hasil. 😊" },
+  { k: ["akurat", "akurasi", "ilmiah", "terbukti", "valid"], wa: true,
+    a: "Saya tidak menyampaikan angka akurasi atau klaim ilmiah yang belum terverifikasi. Silakan diskusikan pertanyaan ini langsung dengan tim kami agar dijelaskan sesuai sumber resmi." },
+  { k: ["apa itu", "stifin itu", "pengertian", "konsep", "mesin kecerdasan", "personaliti genetik"],
+    a: "Dalam konsep STIFIn, dikenal <b>lima Mesin Kecerdasan</b> dan <b>sembilan Personaliti Genetik</b>. Hasil tes membantu Anda <i>mengenali, memahami, dan mengembangkan</i> diri. Hasil ini bukan penentu nasib atau batas kemampuan. Penjelasan lengkap diberikan dalam sesi penjelasan hasil." },
+  { k: ["usia", "umur", "balita", "persiapan"],
+    a: "Tes dapat diikuti mulai <b>usia 2,5 tahun</b> dan tidak memerlukan persiapan khusus." },
+  { k: ["lama", "durasi", "menit", "kapan hasil", "hasilnya keluar"],
+    a: "Proses tes hingga hasil keluar sekitar <b>15 menit</b>. Sesi penjelasan hasil biasanya dijadwalkan kembali di waktu terpisah." },
+  { k: ["harga", "biaya", "tarif", "berapa", "ongkos"],
+    a: "<b>Biaya tes STIFIn:</b><br>• Personal/keluarga: Rp650.000 per orang<br>• Instansi/lembaga: Rp500.000 per orang (minimal 10 orang)<br><br>Sudah termasuk sertifikat cetak &amp; digital, e-book 9 Personaliti Genetik, dan penjelasan hasil maksimal 1,5 jam." },
+  { k: ["bayar", "pembayaran", "dp", "uang muka", "transfer", "tunai"],
+    a: "Tidak ada uang muka. Pembayaran dilakukan <b>setelah tes</b>, secara tunai atau transfer." },
+  { k: ["jadwal", "jam", "buka", "janji", "booking", "daftar", "kapan"], wa: true,
+    a: "<b>Jam layanan:</b><br>• Senin–Jumat: 17.30–21.30 WITA<br>• Sabtu–Minggu: 09.30–21.30 WITA<br><br>Janji tes <b>wajib</b> dibuat melalui WhatsApp." },
+  { k: ["lokasi", "kunjungan", "datang", "alamat", "luar kota", "jarak", "km"], wa: true,
+    a: "Kami melayani kunjungan di <b>Kalimantan Selatan dan Kalimantan Tengah</b>, maksimal 80 km perjalanan darat dari Sungai Sipai, Martapura, tanpa biaya transportasi tambahan. Di luar Kabupaten Banjar dan Kota Banjarbaru, minimal 5 peserta. Untuk jarak di atas 80 km, silakan tanyakan langsung ke tim." },
+  { k: ["konsultasi", "konseling", "curhat", "lanjutan"], wa: true,
+    a: "Tersedia <b>konsultasi/konseling lanjutan STIFIn</b>: Rp150.000 per sesi, maksimal 2 jam. Sesi personal/keluarga biasanya offline, dan sesi online tersedia bila diperlukan." },
+  { k: ["workshop", "seminar", "pelatihan", "lembaga", "instansi", "sekolah"], wa: true,
+    a: "Workshop Tematik STIFIn dapat disesuaikan dengan kebutuhan lembaga. Tema, tarif, dan minimum peserta mengikuti kesepakatan." },
+  { k: ["wsl", "sertifikasi", "promotor", "trainer"], wa: true,
+    a: "Sertifikasi <b>WSL1 dan WSL2</b> diselenggarakan KENALIDIRI.ID bersama Trainer Rahmadani. Detail syarat, jadwal, dan biaya disampaikan langsung oleh tim." },
+  { k: ["anak", "belajar", "parenting", "orang tua"],
+    a: "Banyak keluarga memakai STIFIn untuk memahami perbedaan cara belajar dan kebutuhan anak. Fokusnya membantu orang tua mengenali kekuatan anak, bukan melabeli atau menjamin hasil. Langkah awalnya adalah tes STIFIn (mulai usia 2,5 tahun), lalu sesi penjelasan hasil." },
+  { k: ["konselor", "admin", "manusia", "tim", "whatsapp", "wa", "hubungi", "kontak"], wa: true,
+    a: "Tentu! Klik tombol di bawah untuk terhubung dengan tim KENALIDIRI.ID melalui WhatsApp." },
+  { k: ["halo", "hai", "hi", "assalamualaikum", "pagi", "siang", "sore", "malam", "terima kasih", "makasih"],
+    a: "Halo, terima kasih sudah menyapa! 👋 Ada yang ingin Anda ketahui tentang tes atau layanan STIFIn?" }
+];
+const fallback = { wa: true, a: "Maaf, saya belum punya jawaban pasti untuk pertanyaan itu. Agar informasinya akurat, tim KENALIDIRI.ID siap membantu melalui WhatsApp." };
+
+function norm(s) { return " " + s.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim() + " "; }
+function findIntent(text) {
+  const t = norm(text);
+  return intents.find(it => it.k.some(k => k.length <= 3 ? t.includes(" " + k + " ") : t.includes(" " + k))) || fallback;
 }
 
-buttons.forEach(b => b.addEventListener("click", () => play(+b.dataset.s)));
+const panel = document.getElementById("panel");
+const log = document.getElementById("log");
+const form = document.getElementById("form");
+const input = document.getElementById("input");
+let started = false, busy = false;
+
+function openChat() {
+  panel.classList.add("open");
+  document.body.classList.add("chat-open");
+  if (!started) {
+    started = true;
+    const d = document.createElement("div");
+    d.className = "disclaimer";
+    d.textContent = "Counselor STIFIn memberi informasi umum, bukan pengganti tes, diagnosis, atau layanan profesional. Percakapan di halaman ini tidak disimpan.";
+    log.appendChild(d);
+    bubble(log, "agent", "Halo! 👋 Saya <b>Counselor STIFIn</b> dari KENALIDIRI.ID. Silakan pilih topik di bawah atau ketik pertanyaan Anda.");
+  }
+  if (window.innerWidth > 760) setTimeout(() => input.focus(), 250);
+}
+function closeChat() {
+  panel.classList.remove("open");
+  document.body.classList.remove("chat-open");
+}
+
+async function ask(text) {
+  text = text.trim();
+  if (!text || busy) return;
+  busy = true;
+  bubble(log, "user", "").textContent = text;
+  input.value = "";
+  const it = findIntent(text);
+  await wait(400);
+  const t = bubble(log, "agent typing", "<i></i><i></i><i></i>");
+  await wait(Math.min(700 + it.a.length * 4, 1800));
+  t.remove();
+  const btn = it.wa ? `<br><a class="btn wa" href="${WA}" target="_blank" rel="noopener">💬 Hubungi via WhatsApp</a>` : "";
+  bubble(log, "agent", it.a + btn);
+  busy = false;
+}
+
+document.querySelectorAll("[data-open-chat]").forEach(b => b.addEventListener("click", openChat));
+document.getElementById("closeChat").addEventListener("click", closeChat);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && panel.classList.contains("open")) closeChat(); });
+form.addEventListener("submit", e => { e.preventDefault(); ask(input.value); });
+document.querySelectorAll("#chips button").forEach(b => b.addEventListener("click", () => ask(b.textContent)));
 </script>
 </body>
 </html>
